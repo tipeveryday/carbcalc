@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Carb Calculator</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/marx.min.css">
+    <style>
+        error {
+            color: white;
+            background: lightcoral;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <center>
+            <h1>Carb Calculator</h1>
+        </center>
+    </header>
+    <main>
+        <section>
+            <h2>Input</h2>
+                <h5>Your weight on raceday in KG:</h5>
+                <input type="number" placeholder="70kg" id="weight_input" />
+                <h5>Race Distance in KM:</h5>
+                <input type="number" placeholder="10km" id="distance_input" />
+                <h5>Expected Completion Time:</h5>
+                <input style="width: 49%; display:inline;" type="number" placeholder="Hours" id="hours_input" />
+                <input style="width: 49%; display:inline;" type="number" placeholder="Minutes" id="minutes_input" />
+                <br><br>
+                <button style="width: 100%;" onclick="main()">Calculate</button>
+        </section>
+
+        <section id="results_section">
+        </section>
+
+    </main>
+    <footer>
+      
+    </footer>
+</body>
+<script src="assets/js/script.js"></script>
+
+</html>
